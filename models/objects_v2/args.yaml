@@ -1,10 +1,10 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: ../dataset/data.yaml
+data: /home/harry/AI/object_detector/dataset/data.yaml
 epochs: 50
 time: null
-patience: 10
+patience: 20
 batch: 16
 imgsz: 640
 save: true
@@ -12,8 +12,8 @@ save_period: -1
 cache: false
 device: cpu
 workers: 8
-project: ../models
-name: objects_v1
+project: /home/harry/AI/object_detector/models
+name: objects_v2
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -47,7 +47,7 @@ source: null
 vid_stride: 1
 stream_buffer: false
 visualize: false
-augment: false
+augment: true
 agnostic_nms: false
 classes: null
 retina_masks: false
@@ -86,7 +86,7 @@ nbs: 64
 hsv_h: 0.015
 hsv_s: 0.7
 hsv_v: 0.4
-degrees: 0.0
+degrees: 10
 translate: 0.1
 scale: 0.5
 shear: 0.0
@@ -103,4 +103,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: /home/harry/Github/object_detector/models/objects_v1
+save_dir: /home/harry/AI/object_detector/models/objects_v2

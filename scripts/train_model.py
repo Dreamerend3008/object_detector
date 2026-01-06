@@ -11,7 +11,7 @@ model = YOLO('yolov8n.pt')
 
 results = model.train(
     data=str(DATA_PATH),
-    epochs=100,              # More epochs
+    epochs=50,              # More epochs
     imgsz=640,
     batch=16,
     device='0' if torch.cuda.is_available() else 'cpu',

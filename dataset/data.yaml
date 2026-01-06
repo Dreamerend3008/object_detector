@@ -1,6 +1,6 @@
-train: /home/harry/Github/object_detector/dataset/train
-val: /home/harry/Github/object_detector/dataset/valid
-test: /home/harry/Github/object_detector/dataset/test
+train: ../train
+val: ../valid
+test: ../test
 
 nc: 3
 names: ['chair', 'knife', 'phone']
