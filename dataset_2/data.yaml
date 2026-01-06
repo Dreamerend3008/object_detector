@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 35
+names: ['Chair', 'Sofa', 'Table', 'air conditioner', 'book', 'bottle', 'bowl', 'cabinet', 'cat', 'chair', 'computer', 'computer chair', 'computer table', 'couch', 'cup', 'dining chair', 'flower', 'ironing table', 'lamp', 'metal chair', 'office table', 'picture', 'pillow', 'plastic chair', 'potted plant', 'restaurant chair', 'shelf', 'slipper', 'sofa', 'study table', 'table', 'television', 'wooden chair', 'wooden sofa', 'wooden table']
+
+roboflow:
+  workspace: inhouse-objects-detection
+  project: in-house-objects-detection-kqdef
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/inhouse-objects-detection/in-house-objects-detection-kqdef/dataset/2
