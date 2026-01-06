@@ -1,0 +1,13 @@
+train: /home/harry/Github/object_detector/dataset/train
+val: /home/harry/Github/object_detector/dataset/valid
+test: /home/harry/Github/object_detector/dataset/test
+
+nc: 3
+names: ['chair', 'knife', 'phone']
+
+roboflow:
+  workspace: test-gkead
+  project: object-detector-a0wn9
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/test-gkead/object-detector-a0wn9/dataset/2
